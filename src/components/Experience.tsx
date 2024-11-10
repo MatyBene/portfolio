@@ -3,7 +3,7 @@ import React from "react";
 export function Experience() {
   const experiences = [
     {
-      empresa: "CleanWave.com",
+      empresa: "CleanWave",
       cargo: "Desarrollador web full stack",
       periodo: "jun. 2023 - dic. 2023",
       descripcion:
