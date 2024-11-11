@@ -2,9 +2,8 @@ import React from "react";
 
 export function About() {
   return (
-    <section>
-      <h2>Sobre mi</h2>
-      <div>
+    <section className="about scrollable">
+      <div className="experience-item">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
           consectetur libero. Libero beatae harum, velit error quasi ipsum

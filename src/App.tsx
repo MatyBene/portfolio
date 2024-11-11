@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Hero } from "./components/Hero";
 import { SkillsIcons } from "./components/SkillsIcons";
 import { Experience } from "./components/Experience";
@@ -11,17 +11,38 @@ function App() {
   const [activeTab, setActiveTab] = useState("experience");
 
   return (
-    <div>
-      <div>
+    <div className="portfolio-container">
+      <div className="left-section">
         <Hero />
         <SkillsIcons />
       </div>
-      <div>
-        <div>
-          <button>Experiencia</button>
-          <button>Proyectos</button>
-          <button>Formación</button>
-          <button>Sobre mí</button>
+
+      <div className="right-section">
+        <div className="tabs">
+          <button
+            className={`tab ${activeTab === "experience" ? "active" : ""}`}
+            onClick={() => setActiveTab("experience")}
+          >
+            Experiencia
+          </button>
+          <button
+            className={`tab ${activeTab === "projects" ? "active" : ""}`}
+            onClick={() => setActiveTab("projects")}
+          >
+            Proyectos
+          </button>
+          <button
+            className={`tab ${activeTab === "education" ? "active" : ""}`}
+            onClick={() => setActiveTab("education")}
+          >
+            Formación
+          </button>
+          <button
+            className={`tab ${activeTab === "about" ? "active" : ""}`}
+            onClick={() => setActiveTab("about")}
+          >
+            Sobre mí
+          </button>
         </div>
 
         {activeTab === "experience" && <Experience />}

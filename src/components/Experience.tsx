@@ -9,26 +9,13 @@ export function Experience() {
       descripcion:
         "Proyecto integrador realizado en el marco de Digital House. Desarrollo de una aplicacion web que es un e-commerce utilizando HTML para la estructura, CSS para el diseño y Javascript para interacciones y/o validaciones del lado del cliente.",
     },
-    {
-      empresa: null,
-      cargo: "Programador en C",
-      periodo: "mar. 2024 - jun. 2024",
-      descripcion: "Proyecto 1",
-    },
-    {
-      empresa: null,
-      cargo: "Programador en Java",
-      periodo: "sep. 2024 - nov. 2024",
-      descripcion: "Proyecto 2",
-    },
   ];
 
   return (
     <section>
-      <h2>Experiencia profesional</h2>
-      <div>
+      <div className="scrollable">
         {experiences.map((exp, i) => (
-          <div key={i}>
+          <div key={i} className="experience-item">
             <div>
               <h3>{exp.cargo}</h3>
               {exp.empresa && <h4>{exp.empresa}</h4>}

@@ -1,21 +1,20 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
+import { FaGithub, FaFileDownload } from "react-icons/fa";
+import { SiLinkedin } from "react-icons/si";
 
 export function Hero() {
   return (
-    <section>
+    <section className="hero">
       <div>
-        <div>
-          <img src="/profile.jpg" alt="Matias Benedetti" />
-        </div>
+        <img src="\public\El_gatoo.png" alt="Matias Benedetti" />
         <h1>Matias Benedetti</h1>
-        <p>Desarrollador Web Backend</p>
-        <div>
+        <p>Desarrollador Web</p>
+        <div className="social-links">
           <a href="https://github.com/MatyBene">
             <FaGithub /> GitHub
           </a>
           <a href="https://www.linkedin.com/in/matiasbenedetti/">
-            <FaLinkedin /> LinkedIn
+            <SiLinkedin /> LinkedIn
           </a>
           <a href="/cv.pdf">
             <FaFileDownload /> CV
