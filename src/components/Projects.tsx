@@ -1,21 +1,13 @@
-import React from "react";
 import { FaCode, FaJava } from "react-icons/fa";
 import {
-  SiSpringboot,
   SiHtml5,
   SiCss3,
   SiJavascript,
-  SiTypescript,
   SiReact,
   SiNodedotjs,
   SiExpress,
   SiMysql,
   SiJunit5,
-  SiJest,
-  SiGit,
-  SiGithub,
-  SiDocker,
-  SiNpm,
   SiC,
 } from "react-icons/si";
 

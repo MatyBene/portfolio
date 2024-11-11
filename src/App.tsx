@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Hero } from "./components/Hero";
 import { SkillsIcons } from "./components/SkillsIcons";
 import { Experience } from "./components/Experience";
