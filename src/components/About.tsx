@@ -6,7 +6,7 @@ export function About() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
           consectetur libero. Libero beatae harum, velit error quasi ipsum
           facilis, corrupti at doloremque nam magni unde sunt praesentium fugiat
-          minima animi?
+          minima animi?sdffsdfsdfsdfsdfsdsfdfsdsfdsdfsdfsdfsdfsdf
         </p>
       </div>
     </section>
