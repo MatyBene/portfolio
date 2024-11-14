@@ -17,7 +17,7 @@ function App() {
         <SkillsIcons />
       </div>
 
-      <div className="right-section">
+      <div>
         <div className="tabs">
           <button
             className={`tab ${activeTab === "experience" ? "active" : ""}`}

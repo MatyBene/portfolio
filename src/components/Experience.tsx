@@ -14,12 +14,10 @@ export function Experience() {
       <div className="scrollable">
         {experiences.map((exp, i) => (
           <div key={i} className="experience-item">
-            <div>
-              <h3>{exp.cargo}</h3>
-              {exp.empresa && <h4>{exp.empresa}</h4>}
-              <span>{exp.periodo}</span>
-              <p>{exp.descripcion}</p>
-            </div>
+            <h3>{exp.cargo}</h3>
+            {exp.empresa && <h4>{exp.empresa}</h4>}
+            <span>{exp.periodo}</span>
+            <p>{exp.descripcion}</p>
           </div>
         ))}
       </div>

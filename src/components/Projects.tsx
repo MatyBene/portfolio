@@ -31,14 +31,16 @@ export function Projects() {
     },
     {
       titulo: "Proyecto Final - Programación 1",
-      descripcion: "",
+      descripcion:
+        "Sistema de gestión de biblioteca desarrollado en C que permite administrar libros, usuarios y comentarios. Incluye funcionalidades como autenticación de usuarios, sistema de roles (admin/usuario), gestión de libros con valoraciones, lista de favoritos personalizada, y búsqueda avanzada por múltiples criterios. El proyecto demuestra dominio de programación estructurada, manejo de memoria, estructuras de datos y persistencia mediante archivos.",
       tecnologias: [{ icon: <SiC />, name: "C" }],
       codigo: "https://github.com/MatyBene/progra-1-tp-final",
       demo: "",
     },
     {
       titulo: "Proyecto Final - Programación 2",
-      descripcion: "",
+      descripcion:
+        "Un juego clicker basado en One Piece desarrollado en Java utilizando JavaFX. Testeado con JUnit.",
       tecnologias: [
         { icon: <FaJava />, name: "Java" },
         { icon: <SiJunit5 />, name: "Junit5" },
