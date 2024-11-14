@@ -64,7 +64,7 @@ export function Projects() {
                 </div>
               ))}
             </div>
-            <div className="social-links">
+            <div className="social-links docs-links">
               <a href={project.codigo}>
                 <FaCode /> Repositorio
               </a>
