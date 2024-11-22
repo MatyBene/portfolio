@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="hero">
       <div>
-        <img src="El_gatoo.png" alt="Matias Benedetti" />
+        <img src="benedettiMatias.jpg" alt="Matias Benedetti" />
         <h1>Matias Benedetti</h1>
         <p>Desarrollador Web</p>
         <div className="social-links">

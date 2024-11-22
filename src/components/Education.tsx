@@ -23,6 +23,20 @@ export function Education() {
       descripcion: "",
       certificado: "benedetti_programacion_dh.pdf",
     },
+    {
+      titulo: "Curso de Introducción al Testing con JavaScript",
+      institucion: "Platzi",
+      periodo: "nov. 2024",
+      descripcion: "",
+      certificado: "diploma-javascript-testing.pdf",
+    },
+    {
+      titulo: "Curso Básico de Testing en Java",
+      institucion: "Platzi",
+      periodo: "nov. 2024",
+      descripcion: "",
+      certificado: "diploma-testing-java.pdf",
+    },
   ];
 
   return (
