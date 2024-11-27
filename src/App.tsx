@@ -23,25 +23,25 @@ function App() {
             className={`tab ${activeTab === "experience" ? "active" : ""}`}
             onClick={() => setActiveTab("experience")}
           >
-            Experiencia
+            Experience
           </button>
           <button
             className={`tab ${activeTab === "projects" ? "active" : ""}`}
             onClick={() => setActiveTab("projects")}
           >
-            Proyectos
+            Projects
           </button>
           <button
             className={`tab ${activeTab === "education" ? "active" : ""}`}
             onClick={() => setActiveTab("education")}
           >
-            Formación
+            Education
           </button>
           <button
             className={`tab ${activeTab === "about" ? "active" : ""}`}
             onClick={() => setActiveTab("about")}
           >
-            Sobre mí
+            About me
           </button>
         </div>
 

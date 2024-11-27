@@ -1,41 +1,48 @@
 export function Education() {
   const education = [
     {
-      titulo: "Técnico Universitario en Programación",
-      institucion:
+      title: "Técnico Universitario en Programación",
+      institution:
         "UTN Universidad Tecnológica Nacional, Facultad Regional Mar del Plata",
-      periodo: "mar. 2024",
-      descripcion: "En curso.",
-      certificado: "",
+      period: "March 2024",
+      description: "In progress.",
+      certificate: "",
     },
     {
-      titulo: "Ingeniero Electricista",
-      institucion:
+      title: "Ingeniero Electricista",
+      institution:
         "Facultad de Ingeniería, Universidad Nacional de Mar del Plata",
-      periodo: "mar. 2015",
-      descripcion: "50% de materias aprobadas, carrera no terminada.",
-      certificado: "benedetti_ingenieria.pdf",
+      period: "March 2015",
+      description: "50% of courses completed, degree not finished.",
+      certificate: "benedetti_ingenieria.pdf",
     },
     {
-      titulo: "Desarrollador Web Full Stack",
-      institucion: "Digital House",
-      periodo: "jun. 2022 - ene. 2023",
-      descripcion: "",
-      certificado: "benedetti_programacion_dh.pdf",
+      title: "Desarrollador Web Full Stack",
+      institution: "Digital House",
+      period: "June 2022 - January 2023",
+      description: "",
+      certificate: "benedetti_programacion_dh.pdf",
     },
     {
-      titulo: "Curso de Introducción al Testing con JavaScript",
-      institucion: "Platzi",
-      periodo: "nov. 2024",
-      descripcion: "",
-      certificado: "diploma-javascript-testing.pdf",
+      title: "Desarrollo de APIs con Spring Boot",
+      institution: "Todo Code",
+      period: "November 2024",
+      description: "",
+      certificate: "Spring Boot - TodoCode.pdf",
     },
     {
-      titulo: "Curso Básico de Testing en Java",
-      institucion: "Platzi",
-      periodo: "nov. 2024",
-      descripcion: "",
-      certificado: "diploma-testing-java.pdf",
+      title: "Curso de Introducción al Testing con JavaScript",
+      institution: "Platzi",
+      period: "November 2024",
+      description: "",
+      certificate: "diploma-javascript-testing.pdf",
+    },
+    {
+      title: "Curso Básico de Testing en Java",
+      institution: "Platzi",
+      period: "November 2024",
+      description: "",
+      certificate: "diploma-testing-java.pdf",
     },
   ];
 
@@ -44,12 +51,12 @@ export function Education() {
       <div className="scrollable">
         {education.map((edu, i) => (
           <div key={i} className="experience-item">
-            <h3>{edu.titulo}</h3>
-            <h4>{edu.institucion}</h4>
-            <span>{edu.periodo}</span>
-            <p>{edu.descripcion}</p>
+            <h3>{edu.title}</h3>
+            <h4>{edu.institution}</h4>
+            <span>{edu.period}</span>
+            <p>{edu.description}</p>
             <div className="social-links docs-links">
-              {edu.certificado && <a href={edu.certificado}>Certificado</a>}
+              {edu.certificate && <a href={edu.certificate}>Certificate</a>}
             </div>
           </div>
         ))}

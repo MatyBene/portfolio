@@ -1,11 +1,11 @@
 export function Experience() {
   const experiences = [
     {
-      empresa: "CleanWave",
-      cargo: "Desarrollador web full stack",
-      periodo: "jun. 2023 - dic. 2023",
-      descripcion:
-        "Proyecto integrador realizado en el marco de Digital House. Desarrollo de una aplicacion web que es un e-commerce utilizando HTML para la estructura, CSS para el diseño y Javascript para interacciones y/o validaciones del lado del cliente.",
+      company: "CleanWave",
+      position: "Desarrollador web full stack",
+      period: "June 2023 - December 2023",
+      description:
+        "Integrative project completed as part of Digital House. Development of a web application that functions as an e-commerce platform, using HTML for the structure, CSS for the design, and JavaScript for client-side interactions and/or validations.",
     },
   ];
 
@@ -14,10 +14,10 @@ export function Experience() {
       <div className="scrollable">
         {experiences.map((exp, i) => (
           <div key={i} className="experience-item">
-            <h3>{exp.cargo}</h3>
-            {exp.empresa && <h4>{exp.empresa}</h4>}
-            <span>{exp.periodo}</span>
-            <p>{exp.descripcion}</p>
+            <h3>{exp.position}</h3>
+            {exp.company && <h4>{exp.company}</h4>}
+            <span>{exp.period}</span>
+            <p>{exp.description}</p>
           </div>
         ))}
       </div>

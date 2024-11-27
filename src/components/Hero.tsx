@@ -7,7 +7,7 @@ export function Hero() {
       <div>
         <img src="benedettiMatias.jpg" alt="Matias Benedetti" />
         <h1>Matias Benedetti</h1>
-        <p>Desarrollador Web</p>
+        <p>Web Developer</p>
         <div className="social-links">
           <a href="https://github.com/MatyBene">
             <FaGithub /> GitHub
