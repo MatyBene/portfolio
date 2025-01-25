@@ -13,7 +13,7 @@ import {
   SiJest,
   SiGit,
   SiGithub,
-  SiDocker,
+  // SiDocker,
   SiNpm,
 } from "react-icons/si";
 
@@ -33,7 +33,7 @@ export function SkillsIcons() {
     { icon: <SiJest />, name: "Jest" },
     { icon: <SiGit />, name: "Git" },
     { icon: <SiGithub />, name: "GitHub" },
-    { icon: <SiDocker />, name: "Docker" },
+    // { icon: <SiDocker />, name: "Docker" },
     { icon: <SiNpm />, name: "NPM" },
   ];
 

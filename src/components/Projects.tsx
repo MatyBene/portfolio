@@ -30,18 +30,18 @@ export function Projects() {
       demo: "",
     },
     {
-      title: "Final Project - Programming 2",
+      title: "One Piece: King of Java",
       description:
         "A clicker game based on One Piece, developed in Java using JavaFX. Tested with JUnit.",
       technologies: [
         { icon: <FaJava />, name: "Java" },
         { icon: <SiJunit5 />, name: "Junit5" },
       ],
-      code: "https://github.com/MatyBene/progra-1-tp-final",
+      code: "https://github.com/MatyBene/tp_final_programacion_2",
       demo: "",
     },
     {
-      title: "Final Project - Programming 1",
+      title: "LibraSys",
       description:
         "Library management system developed in C, designed to manage books, users, and comments. It includes features such as user authentication, a role system (admin/user), book management with ratings, a personalized favorites list, and advanced search by multiple criteria. The project demonstrates proficiency in structured programming, memory management, data structures, and persistence through file handling.",
       technologies: [{ icon: <SiC />, name: "C" }],
