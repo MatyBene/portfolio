@@ -31,6 +31,13 @@ export function Education() {
       certificate: "Spring Boot - TodoCode.pdf",
     },
     {
+      title: "Curso de Github Copilot",
+      institution: "Código Facilito",
+      period: "March 2024",
+      description: "",
+      certificate: "Certificado - Curso de Github Copilot.pdf",
+    },
+    {
       title: "Curso de Introducción al Testing con JavaScript",
       institution: "Platzi",
       period: "November 2024",
