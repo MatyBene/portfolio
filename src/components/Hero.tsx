@@ -15,7 +15,7 @@ export function Hero() {
           <a href="https://www.linkedin.com/in/matiasbenedetti/">
             <SiLinkedin /> LinkedIn
           </a>
-          <a href="CV-Benedetti.pdf">
+          <a href="CV-BenedettiMatias.pdf">
             <FaFileDownload /> CV
           </a>
         </div>
