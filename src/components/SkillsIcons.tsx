@@ -42,7 +42,7 @@ export function SkillsIcons() {
       {skills.map((skill, index) => (
         <div key={index} className="skill-icon">
           {skill.icon}
-          {/* <span>{skill.name}</span> */}
+          <span>{skill.name}</span>
         </div>
       ))}
     </div>
