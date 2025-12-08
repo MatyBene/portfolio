@@ -13,8 +13,10 @@ import {
   SiJest,
   SiGit,
   SiGithub,
-  // SiDocker,
+  SiDocker,
   SiNpm,
+  SiAngular,
+  SiIonic
 } from "react-icons/si";
 
 export function SkillsIcons() {
@@ -33,8 +35,10 @@ export function SkillsIcons() {
     { icon: <SiJest />, name: "Jest" },
     { icon: <SiGit />, name: "Git" },
     { icon: <SiGithub />, name: "GitHub" },
-    // { icon: <SiDocker />, name: "Docker" },
+    { icon: <SiDocker />, name: "Docker" },
     { icon: <SiNpm />, name: "NPM" },
+    { icon: <SiAngular />, name: "Angular" },
+    { icon: <SiIonic />, name: "Ionic" },
   ];
 
   return (

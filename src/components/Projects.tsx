@@ -9,14 +9,38 @@ import {
   SiMysql,
   SiJunit5,
   SiC,
+  SiAngular,
+  SiIonic,
+  SiSpringboot,
+  SiTypescript,
 } from "react-icons/si";
+import { useLanguage } from "../contexts/useLanguage";
+import { translations } from "../translations/translations";
 
 export function Projects() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const projects = [
     {
-      title: "Clean Wave",
-      description:
-        "Integrative project completed as part of Digital House. Development of a web application that functions as an e-commerce platform, using HTML for structure, CSS for design, and JavaScript for client-side interactions and/or validations.",
+      title: t.projects.items[0].title,
+      description: t.projects.items[0].description,
+      technologies: [
+        { icon: <SiSpringboot />, name: "SpringBoot" },
+        { icon: <SiAngular />, name: "Angular" },
+        { icon: <SiTypescript />, name: "TypeScript" },
+        { icon: <SiHtml5 />, name: "HTML5" },
+        { icon: <SiCss3 />, name: "CSS3" },
+        { icon: <SiMysql />, name: "MySQL" },
+        { icon: <SiJunit5 />, name: "Junit5" },
+        { icon: <SiIonic />, name: "Ionic" },
+      ],
+      code: "https://github.com/MatyBene/Centro-Deportivo",
+      demo: "https://d1q3qzgxmthdrt.cloudfront.net",
+    },
+    {
+      title: t.projects.items[1].title,
+      description: t.projects.items[1].description,
       technologies: [
         { icon: <SiJavascript />, name: "JavaScript" },
         { icon: <SiReact />, name: "React" },
@@ -30,9 +54,8 @@ export function Projects() {
       demo: "",
     },
     {
-      title: "One Piece: King of Java",
-      description:
-        "A clicker game based on One Piece, developed in Java using JavaFX. Tested with JUnit.",
+      title: t.projects.items[2].title,
+      description: t.projects.items[2].description,
       technologies: [
         { icon: <FaJava />, name: "Java" },
         { icon: <SiJunit5 />, name: "Junit5" },
@@ -41,9 +64,8 @@ export function Projects() {
       demo: "",
     },
     {
-      title: "LibraSys",
-      description:
-        "Library management system developed in C, designed to manage books, users, and comments. It includes features such as user authentication, a role system (admin/user), book management with ratings, a personalized favorites list, and advanced search by multiple criteria. The project demonstrates proficiency in structured programming, memory management, data structures, and persistence through file handling.",
+      title: t.projects.items[3].title,
+      description: t.projects.items[3].description,
       technologies: [{ icon: <SiC />, name: "C" }],
       code: "https://github.com/MatyBene/progra-1-tp-final",
       demo: "",
@@ -61,14 +83,15 @@ export function Projects() {
               {project.technologies.map((tech, ii) => (
                 <div key={ii} className="skill-icon">
                   {tech.icon}
+                  {tech.name}
                 </div>
               ))}
             </div>
             <div className="social-links docs-links">
               <a href={project.code}>
-                <FaCode /> Repository
+                <FaCode /> {t.projects.repository}
               </a>
-              {project.demo && <a href={project.demo}>Demo</a>}
+              {project.demo && <a href={project.demo}>{t.projects.demo}</a>}
             </div>
           </article>
         ))}

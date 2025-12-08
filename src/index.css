@@ -24,20 +24,25 @@ body {
   font-weight: 100;
   background-color: var(--bg-color);
   color: var(--text-primary);
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
-  /* justify-content: center;
-  padding-left: 2rem;
-  padding-right: 2rem; */
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
 }
 
 #root {
   width: 100%;
   max-width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio-container {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
@@ -45,11 +50,50 @@ body {
   border-radius: 1rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
   padding: 1.75rem;
+  max-height: calc(100vh - 4rem);
+  height: fit-content;
+  overflow: hidden;
 }
 
 .left-section {
   border-right: 1px solid var(--border-color);
   padding-right: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 8rem);
+}
+
+.scrollable-icons {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+  padding-right: 0.5rem;
+}
+
+.scrollable-icons::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable-icons::-webkit-scrollbar-track {
+  background: var(--card-bg);
+  border-radius: 10px;
+}
+
+.scrollable-icons::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: 10px;
+  border: 1px solid var(--card-bg);
+}
+
+.scrollable-icons::-webkit-scrollbar-thumb:hover {
+  background: var(--gradient-secondary);
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 8rem);
   overflow: hidden;
 }
 
@@ -70,7 +114,7 @@ body {
 }
 
 .hero img::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 3px;
   border-radius: 50%;
@@ -91,7 +135,7 @@ body {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .social-links a {
@@ -123,7 +167,7 @@ body {
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   overflow: visible;
 }
 
@@ -131,6 +175,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   color: var(--text-secondary);
   font-size: 0.75rem;
@@ -139,7 +184,8 @@ body {
   background: var(--hover-bg);
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
-  min-width: 70px;
+  width: 85px;
+  height: 85px;
   text-align: center;
   flex-shrink: 0;
 }
@@ -193,7 +239,11 @@ body {
 .tab.active {
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.1) 0%,
+    rgba(6, 182, 212, 0.1) 100%
+  );
 }
 
 .experience-item {
@@ -229,13 +279,18 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.experience-item p {
+  margin-bottom: 1rem;
+}
+
 .inter {
   line-height: 1.6;
 }
 
 .scrollable {
-  height: 41rem;
+  flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .scrollable::-webkit-scrollbar {
@@ -258,8 +313,21 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+    padding: 1rem;
+  }
+
+  #root {
+    height: auto;
+  }
+
   .portfolio-container {
     grid-template-columns: 1fr;
+    max-height: none;
+    height: auto;
   }
 
   .left-section {
@@ -267,10 +335,17 @@ body {
     border-bottom: 1px solid var(--border-color);
     padding-right: 0;
     padding-bottom: 2rem;
+    max-height: none;
+  }
+
+  .scrollable-icons {
+    overflow-y: visible;
+    overflow-x: hidden;
   }
 
   .right-section {
     padding-left: 0;
+    max-height: none;
   }
 
   .tabs {
@@ -324,7 +399,7 @@ body {
   #root {
     width: max-content;
   }
-  
+
   .social-links {
     flex-wrap: wrap;
     justify-content: center;
@@ -338,5 +413,5 @@ body {
 
   .experience-item .skill-icon:hover {
     transform: translateY(0px);
-}
+  }
 }
