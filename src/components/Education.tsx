@@ -6,6 +6,7 @@ export function Education() {
   const t = translations[language];
 
   const certificates = [
+    "ingenieria-informatica.pdf",
     "benedetti-tup.pdf",
     "benedetti_ingenieria.pdf",
     "benedetti_programacion_dh.pdf",

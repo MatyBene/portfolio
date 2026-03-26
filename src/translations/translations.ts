@@ -60,6 +60,13 @@ export const translations = {
       certificate: "Certificate",
       items: [
         {
+          title: "Computer Engineer",
+          institution:
+            "Facultad de Ingeniería, Universidad Nacional de Mar del Plata",
+          period: "March 2026",
+          description: "In progress.",
+        },
+        {
           title: "University Technician in Programming",
           institution:
             "UTN Universidad Tecnológica Nacional, Facultad Regional Mar del Plata",
@@ -198,6 +205,13 @@ export const translations = {
     education: {
       certificate: "Certificado",
       items: [
+        {
+          title: "Ingeniero informatico",
+          institution:
+            "Facultad de Ingeniería, Universidad Nacional de Mar del Plata",
+          period: "Marzo 2026",
+          description: "En curso.",
+        },
         {
           title: "Técnico Universitario en Programación",
           institution:
