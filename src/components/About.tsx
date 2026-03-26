@@ -9,7 +9,9 @@ export function About() {
     <section>
       <div className="scrollable">
         <div className="experience-item">
-          <p className="inter">{t.about.text}</p>
+          {t.about.text.map((paragraph, index) => (
+            <p key={index} className="inter">{paragraph}</p>
+          ))}
         </div>
       </div>
     </section>

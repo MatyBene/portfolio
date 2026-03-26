@@ -130,7 +130,12 @@ export const translations = {
       ],
     },
     about: {
-      text: "Hello! I am Matías Benedetti, a student of the University Technician in Programming at the National Technological University. Additionally, I have completed 50% of the courses in the Electrical Engineering program at the National University of Mar del Plata, which provides me with additional understanding of technology and applied logic. I have completed the Full Stack Web Developer course at Digital House, where I gained solid knowledge in web development. I am also interested in the field of testing, having worked with tools such as JUnit and Jest to ensure software quality. I am continuously learning and passionate about solving problems through programming, focusing on developing practical and efficient solutions.",
+      text: [
+        "I am Matías Benedetti, a full stack developer focused on Java and Spring Boot. I am currently finishing my University Programming Technician degree at UTN and studying Computer Engineering.",
+        "I have experience developing web applications, particularly REST APIs using Spring Boot, Spring Data JPA, and MySQL, along with frontend development using Angular and React. I have worked on integrative academic projects, including a team-based e-commerce application and structured backend systems applying MVC architecture.",
+        "I am especially interested in software quality, working with automated testing using JUnit, Mockito, and Jest, which allows me to build more robust and maintainable solutions.",
+        "I also have a background in Electrical Engineering (UNMdP), where I completed over 50% of the degree, strengthening my logical and analytical skills. I focus on building practical, well-structured, and scalable solutions while continuing to deepen my knowledge in backend development and software architecture.",
+      ],
     },
   },
   es: {
@@ -264,7 +269,12 @@ export const translations = {
       ],
     },
     about: {
-      text: "¡Hola! Soy Matías Benedetti, estudiante de Técnico Universitario en Programación en la Universidad Tecnológica Nacional. Además, he completado el 50% de las materias de la carrera de Ingeniería Eléctrica en la Universidad Nacional de Mar del Plata, lo que me brinda una comprensión adicional de la tecnología y la lógica aplicada. He completado el curso de Desarrollador Web Full Stack en Digital House, donde adquirí conocimientos sólidos en desarrollo web. También me interesa el campo del testing, habiendo trabajado con herramientas como JUnit y Jest para garantizar la calidad del software. Estoy en constante aprendizaje y me apasiona resolver problemas a través de la programación, enfocándome en desarrollar soluciones prácticas y eficientes.",
+      text: [
+        "Soy Matías Benedetti, desarrollador full stack con foco en Java y Spring Boot. Actualmente estoy finalizando la Tecnicatura Universitaria en Programación en la UTN y cursando Ingeniería en Informática.",
+        "Tengo experiencia desarrollando aplicaciones web, especialmente APIs REST utilizando Spring Boot, Spring Data JPA y MySQL, junto con frontend en Angular y React. Participé en proyectos integradores, como un e-commerce desarrollado en equipo y sistemas backend estructurados aplicando arquitectura MVC.",
+        "Me interesa particularmente la calidad del software, trabajando con testing automatizado mediante JUnit, Mockito y Jest, lo que me permite desarrollar soluciones más robustas y mantenibles.",
+        "Cuento además con una formación previa en Ingeniería Eléctrica (UNMdP), donde completé más del 50% de la carrera, fortaleciendo mi base lógica y analítica. Me enfoco en construir soluciones prácticas, bien estructuradas y escalables, mientras continúo profundizando mis conocimientos en desarrollo backend y arquitectura de software.",
+      ],
     },
   },
 };

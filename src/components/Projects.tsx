@@ -36,7 +36,7 @@ export function Projects() {
         { icon: <SiIonic />, name: "Ionic" },
       ],
       code: "https://github.com/MatyBene/Centro-Deportivo",
-      demo: "https://d1q3qzgxmthdrt.cloudfront.net",
+      demo: "",
     },
     {
       title: t.projects.items[1].title,
