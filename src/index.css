@@ -415,3 +415,63 @@ body {
     transform: translateY(0px);
   }
 }
+
+/* === Micro-interacciones === */
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scrollable {
+  animation: fadeSlideIn 0.3s ease-out;
+}
+
+.skill-icon {
+  animation: fadeSlideIn 0.35s ease-out backwards;
+}
+
+.skill-icon:nth-child(1)  { animation-delay: 0.00s; }
+.skill-icon:nth-child(2)  { animation-delay: 0.04s; }
+.skill-icon:nth-child(3)  { animation-delay: 0.08s; }
+.skill-icon:nth-child(4)  { animation-delay: 0.12s; }
+.skill-icon:nth-child(5)  { animation-delay: 0.16s; }
+.skill-icon:nth-child(6)  { animation-delay: 0.20s; }
+.skill-icon:nth-child(7)  { animation-delay: 0.24s; }
+.skill-icon:nth-child(8)  { animation-delay: 0.28s; }
+.skill-icon:nth-child(9)  { animation-delay: 0.32s; }
+.skill-icon:nth-child(10) { animation-delay: 0.36s; }
+.skill-icon:nth-child(11) { animation-delay: 0.40s; }
+.skill-icon:nth-child(12) { animation-delay: 0.44s; }
+.skill-icon:nth-child(13) { animation-delay: 0.48s; }
+.skill-icon:nth-child(14) { animation-delay: 0.52s; }
+.skill-icon:nth-child(15) { animation-delay: 0.56s; }
+.skill-icon:nth-child(16) { animation-delay: 0.60s; }
+.skill-icon:nth-child(17) { animation-delay: 0.64s; }
+.skill-icon:nth-child(18) { animation-delay: 0.68s; }
+.skill-icon:nth-child(19) { animation-delay: 0.72s; }
+
+.tab {
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.tab.active {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scrollable,
+  .skill-icon,
+  .tab {
+    animation: none !important;
+    transition: none !important;
+  }
+}

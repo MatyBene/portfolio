@@ -79,7 +79,7 @@ function App() {
           </button>
         </div>
 
-        <div className="scrollable">
+        <div className="scrollable" key={activeTab}>
           {activeTab === "experience" && <Experience />}
           {activeTab === "projects" && <Projects />}
           {activeTab === "education" && <Education />}
