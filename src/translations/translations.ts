@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     hero: {
-      role: "Web Developer",
+      role: "Backend / Full-Stack Developer",
       github: "GitHub",
       linkedin: "LinkedIn",
       cv: "CV",
@@ -60,21 +60,21 @@ export const translations = {
       certificate: "Certificate",
       items: [
         {
-          title: "Computer Engineer",
+          title: "University Technician in Programming",
+          institution:
+            "UTN Universidad Tecnológica Nacional, Facultad Regional Mar del Plata",
+          period: "March 2024 – August 2026",
+          description: "Graduated (Degree in progress) · GPA: 9.19/10",
+        },
+        {
+          title: "Computer Engineering",
           institution:
             "Facultad de Ingeniería, Universidad Nacional de Mar del Plata",
           period: "March 2026",
           description: "In progress.",
         },
         {
-          title: "University Technician in Programming",
-          institution:
-            "UTN Universidad Tecnológica Nacional, Facultad Regional Mar del Plata",
-          period: "March 2024",
-          description: "In progress.",
-        },
-        {
-          title: "Electrical Engineer",
+          title: "Electrical Engineering",
           institution:
             "Facultad de Ingeniería, Universidad Nacional de Mar del Plata",
           period: "March 2015",
@@ -138,16 +138,15 @@ export const translations = {
     },
     about: {
       text: [
-        "I am Matías Benedetti, a full stack developer focused on Java and Spring Boot. I am currently finishing my University Programming Technician degree at UTN and studying Computer Engineering.",
-        "I have experience developing web applications, particularly REST APIs using Spring Boot, Spring Data JPA, and MySQL, along with frontend development using Angular and React. I have worked on integrative academic projects, including a team-based e-commerce application and structured backend systems applying MVC architecture.",
-        "I am especially interested in software quality, working with automated testing using JUnit, Mockito, and Jest, which allows me to build more robust and maintainable solutions.",
-        "I also have a background in Electrical Engineering (UNMdP), where I completed over 50% of the degree, strengthening my logical and analytical skills. I focus on building practical, well-structured, and scalable solutions while continuing to deepen my knowledge in backend development and software architecture.",
+        "I'm Matías Benedetti, a Full-Stack Developer focused on backend engineering with Java and Spring Boot. I hold a University Technician degree in Programming from UTN (GPA: 9.19/10) and am currently pursuing a degree in Computer Engineering at UNMdP, building on a prior background where I completed over 50% of an Electrical Engineering program.",
+        "I build REST APIs and web applications using Spring Boot, Spring Security (JWT), Spring Data JPA, and MySQL, paired with Angular and React frontends. For my capstone project (graded 10/10), I designed and implemented an end-to-end management system for sports centers using layered architecture and relational data modeling.",
+        "I emphasize code quality and maintainability through automated testing with JUnit 5, Mockito, and Jest, while continuing to deepen my expertise in software architecture and backend system design.",
       ],
     },
   },
   es: {
     hero: {
-      role: "Desarrollador Web",
+      role: "Desarrollador Backend / Full-Stack",
       github: "GitHub",
       linkedin: "LinkedIn",
       cv: "CV",
@@ -206,21 +205,21 @@ export const translations = {
       certificate: "Certificado",
       items: [
         {
-          title: "Ingeniero informatico",
+          title: "Técnico Universitario en Programación",
+          institution:
+            "UTN Universidad Tecnológica Nacional, Facultad Regional Mar del Plata",
+          period: "Marzo 2024 – Agosto 2026",
+          description: "Graduado (Título en trámite) · Promedio: 9.19",
+        },
+        {
+          title: "Ingeniería en Informática",
           institution:
             "Facultad de Ingeniería, Universidad Nacional de Mar del Plata",
           period: "Marzo 2026",
           description: "En curso.",
         },
         {
-          title: "Técnico Universitario en Programación",
-          institution:
-            "UTN Universidad Tecnológica Nacional, Facultad Regional Mar del Plata",
-          period: "Marzo 2024",
-          description: "En curso.",
-        },
-        {
-          title: "Ingeniero Electricista",
+          title: "Ingeniería eléctrica",
           institution:
             "Facultad de Ingeniería, Universidad Nacional de Mar del Plata",
           period: "Marzo 2015",
@@ -284,10 +283,9 @@ export const translations = {
     },
     about: {
       text: [
-        "Soy Matías Benedetti, desarrollador full stack con foco en Java y Spring Boot. Actualmente estoy finalizando la Tecnicatura Universitaria en Programación en la UTN y cursando Ingeniería en Informática.",
-        "Tengo experiencia desarrollando aplicaciones web, especialmente APIs REST utilizando Spring Boot, Spring Data JPA y MySQL, junto con frontend en Angular y React. Participé en proyectos integradores, como un e-commerce desarrollado en equipo y sistemas backend estructurados aplicando arquitectura MVC.",
-        "Me interesa particularmente la calidad del software, trabajando con testing automatizado mediante JUnit, Mockito y Jest, lo que me permite desarrollar soluciones más robustas y mantenibles.",
-        "Cuento además con una formación previa en Ingeniería Eléctrica (UNMdP), donde completé más del 50% de la carrera, fortaleciendo mi base lógica y analítica. Me enfoco en construir soluciones prácticas, bien estructuradas y escalables, mientras continúo profundizando mis conocimientos en desarrollo backend y arquitectura de software.",
+        "Soy Matías Benedetti, desarrollador Full-Stack con foco en backend sobre el ecosistema Java y Spring Boot. Soy Técnico Universitario en Programación graduado de la UTN (promedio 9.19) y estudiante de Ingeniería en Informática en la UNMdP, con una base previa de más del 50% de Ingeniería Eléctrica.",
+        "Desarrollo APIs REST y sistemas web utilizando Spring Boot, Spring Security (JWT), Spring Data JPA y MySQL, integrados con interfaces en Angular y React. En mi Trabajo Final Integrador (aprobado con 10/10) diseñé e implementé de punta a punta un sistema de gestión para centros deportivos, aplicando arquitectura en capas y persistencia relacional.",
+        "Priorizo la calidad y mantenibilidad del código mediante testing automatizado con JUnit 5, Mockito y Jest, mientras continúo profundizando en arquitectura de software y diseño de sistemas backend.",
       ],
     },
   },
